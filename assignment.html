@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Advanced Assignment</title>
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #a7f7e7;
+            text-align: center;
+        }
+        h1 { color: #0d4401; }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(15, 12, 12, 0.1);
+            margin: 20px auto;
+            max-width: 500px;
+        }
+        .btn {
+            padding: 10px 15px;
+            border: none;
+            background: #199984;
+            color: white;
+            cursor: pointer;
+            margin: 5px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #171a1c;
+        }
+        input {
+            padding: 10px;
+            width: 80%;
+            margin: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        #counter {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript in Action! 🚀</h1>
+    
+    <div class="container">
+        <h2>Simple Calculator 🧮</h2>
+        <input type="number" id="num1" placeholder="Enter first number">
+        <input type="number" id="num2" placeholder="Enter second number">
+        <div>
+            <button class="btn" onclick="calculate('+')">+</button>
+            <button class="btn" onclick="calculate('-')">-</button>
+            <button class="btn" onclick="calculate('*')">*</button>
+            <button class="btn" onclick="calculate('/')">/</button>
+        </div>
+        <p><strong>Result:</strong> <span id="calc-result">---</span></p>
+    </div>
+
+    <div class="container">
+        <h2>Are You Eligible to Vote? 🗳️</h2>
+        <input type="number" id="ageInput" placeholder="Enter your age">
+        <button class="btn" onclick="checkVotingEligibility()">Check</button>
+        <p id="vote-result"></p>
+    </div>
+
+    <div class="container">
+        <h2>Number Counter 🔢</h2>
+        <p id="counter">0</p>
+        <button class="btn" onclick="startCounting()">Start Counting</button>
+    </div>
+
+    <div class="container">
+        <h2>Dynamic Content ✨</h2>
+        <div id="dynamic-content"></div>
+    </div>
+</body>
+</html>
